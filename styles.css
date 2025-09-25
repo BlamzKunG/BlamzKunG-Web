@@ -1,0 +1,71 @@
+/* styles.css
+   Minimal, responsive, accessible styling using CSS Grid & Flexbox.
+   ใส่ comment ภาษาไทยอธิบายส่วนสำคัญ
+*/
+:root{
+  --color-bg:#0f1724;
+  --color-card:#0b1220;
+  --color-accent:#6ee7b7;
+  --color-text:#e6eef8;
+  --max-width:1100px;
+  --radius:12px;
+  --gap:1rem;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:#0b1220;color:var(--color-text);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0}
+.brand{font-weight:700;color:var(--color-text);text-decoration:none}
+.nav-toggle{display:none}
+.primary-nav ul{list-style:none;padding:0;margin:0;display:flex;gap:1rem}
+.primary-nav a{color:var(--color-text);text-decoration:none;opacity:0.9}
+
+/* Hero */
+.hero{padding:2rem 0}
+.hero-inner{display:grid;grid-template-columns:160px 1fr;gap:1rem;align-items:center}
+.profile-img{width:160px;height:160px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,0.06)}
+.lead{margin-top:0.25rem;color:rgba(230,238,248,0.9)}
+.btn{display:inline-block;padding:0.6rem 1rem;border-radius:10px;background:var(--color-accent);color:#04201a;text-decoration:none;border:0}
+.btn.outline{background:transparent;color:var(--color-accent);border:1px solid rgba(110,231,183,0.2)}
+
+/* Projects grid */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:0;border-radius:var(--radius);overflow:hidden}
+.card img{width:100%;height:160px;object-fit:cover}
+.card-body{padding:0.75rem}
+.card h3{margin:0 0 0.5rem}
+
+/* Resume */
+.resume-embed iframe{width:100%;height:600px;border:0;border-radius:8px}
+
+/* Timeline */
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{padding:0.5rem 0;border-left:2px solid rgba(255,255,255,0.04);margin-left:1rem}
+.timeline time{font-size:0.9rem;color:rgba(230,238,248,0.7)}
+
+/* Contact form */
+.contact-form{display:grid;gap:0.75rem}
+.form-row{display:flex;flex-direction:column}
+label{font-weight:600;margin-bottom:0.25rem}
+input,textarea{padding:0.6rem;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--color-text)}
+.actions{display:flex;gap:0.5rem}
+.form-status{margin-top:0.5rem;color:var(--color-accent)}
+
+/* Footer */
+.site-footer{padding:1rem 0;border-top:1px solid rgba(255,255,255,0.03);margin-top:2rem}
+
+/* Responsive adjustments */
+@media (max-width:800px){
+  .hero-inner{grid-template-columns:1fr;grid-template-rows:auto auto;gap:1rem}
+  .profile-img{width:120px;height:120px;margin:0 auto}
+  .primary-nav{position:absolute;right:1rem;top:68px;background:rgba(5,9,14,0.9);padding:1rem;border-radius:8px;display:none}
+  .nav-toggle{display:inline-block}
+  .primary-nav.open{display:block}
+}
+
+/* Accessibility focus styles */
+:focus{outline:3px solid rgba(110,231,183,0.25);outline-offset:2px}
+
+/* Utilities */
+.hidden{display:none}

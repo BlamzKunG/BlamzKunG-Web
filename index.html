@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ศักดิธัช สิงห์ทา — Portfolio</title>
+  <meta name="description" content="Portfolio ของศักดิธัช สิงห์ทา — นักศึกษาที่สมัครเข้า คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์. Project, Resume, Activities." />
+
+  <!-- SEO / Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ศักดิธัช สิงห์ทา — Portfolio" />
+  <meta property="og:description" content="Portfolio ของ[ชื่อ] — Project, Resume, Activities." />
+  <meta property="og:image" content="assets/og-image-1200x630.jpg" />
+  <meta property="og:url" content="https://your-username.github.io/your-repo/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured Data (JSON-LD) for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "นายศักดิธัช สิงห์ทา",
+    "jobTitle": "Student / Developer",
+    "url": "https://github.com/BlamzKunG/My-roblox-sc",
+    "sameAs": ["https://github.com/your-username","https://www.linkedin.com/in/your-username"]
+  }
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">นายศักดิธัช สิงห์ทา</a>
+      <button id="navToggle" aria-expanded="false" aria-controls="primaryNav" class="nav-toggle">Menu</button>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero" role="region" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-profile">
+          <img srcset="assets/profile-320.jpg 320w, assets/profile-640.jpg 640w, assets/profile-1024.jpg 1024w"
+               sizes="(max-width: 600px) 150px, 240px"
+               src="assets/profile-640.jpg"
+               alt="รูปโปรไฟล์ ศักดิธัช สิงห์ทา"
+               class="profile-img" loading="lazy">
+        </div>
+        <div class="hero-content">
+          <h1 id="hero-heading">นายศักดิธัช สิงห์ทา</h1>
+          <p class="lead">โปรแกรมเมอร์ &amp; นักพัฒนา — สนใจด้าน AI, Systems และ HCI. สมัครเข้าคณะ/สาขา [ชื่อสาขา] เพื่อศึกษาต่อ</p>
+          <div class="hero-ctas">
+            <a class="btn" href="resume.pdf" download>Download Resume</a>
+            <a class="btn outline" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about container" role="region" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p class="about-intro">ประวัติสั้น: [ปีเกิด/การศึกษา/ประสบการณ์สั้น ๆ]. จุดแข็ง: Problem-solving, Algorithmic thinking, Full-stack development. เป้าหมาย: เรียน/ทำวิจัยในสาขา [ชื่อสาขา]</p>
+      <ul class="strengths">
+        <li>ภาษา: Python, JavaScript, MQL5</li>
+        <li>Tools: Git, Docker, VSCode</li>
+        <li>Interests: Machine Learning, Trading Systems</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container" role="region" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="projects-grid" aria-live="polite">
+        <!-- Project card example: copy & paste for more projects -->
+        <article class="card">
+          <img srcset="assets/project1-320.jpg 320w, assets/project1-640.jpg 640w"
+               sizes="(max-width:600px) 100vw, 400px"
+               src="assets/project1-640.jpg"
+               alt="Screenshot ของโครงการ 1" loading="lazy">
+          <div class="card-body">
+            <h3>Project Title 1</h3>
+            <p class="card-desc">คำอธิบายสั้น ๆ ของโปรเจค — ปัญหา + แนวทางแก้</p>
+            <p class="tech">Tech: Python, Flask, SQLite</p>
+            <p class="links"><a href="#" target="_blank" rel="noopener">Demo</a> • <a href="https://github.com/your-username/project1" target="_blank" rel="noopener">GitHub</a></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="resume container" role="region" aria-labelledby="resume-heading">
+      <h2 id="resume-heading">Resume</h2>
+      <div class="resume-embed">
+        <!-- Embedded PDF: show fallback link for browsers that block embedded PDFs -->
+        <iframe src="resume.pdf#view=FitH" title="Resume PDF" loading="lazy"></iframe>
+        <p class="resume-fallback">If your browser can't preview the PDF, <a href="resume.pdf" download>download it here</a>.</p>
+      </div>
+    </section>
+
+    <!-- Activities / Awards -->
+    <section id="activities" class="activities container" role="region" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Activities &amp; Awards</h2>
+      <ul class="timeline">
+        <li>
+          <time datetime="2024-06">Jun 2024</time>
+          <div class="event">รางวัลการแข่งขัน X — ได้อันดับ 1</div>
+        </li>
+        <li>
+          <time datetime="2023-11">Nov 2023</time>
+          <div class="event">Internship ที่บริษัท Y</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container" role="region" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <form id="contactForm" class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+        <!-- NOTE: replace YOUR_FORM_ID with your Formspree form ID, or use Netlify forms by changing attributes -->
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required minlength="3" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required minlength="10" rows="6"></textarea>
+        </div>
+        <div class="form-row actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="button" id="mailtoBtn" class="btn outline">Open Mail Client (fallback)</button>
+        </div>
+        <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ชื่อ-สกุล — All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
